@@ -71,6 +71,10 @@ textarea {
     background-color: #F6EAE9 !important;
 }
 
+.btn-primary {
+    background-color: #B06060 !important;
+}
+
 /*remove ugly border on button click*/
 .no-focus-outline, .no-focus-outline:focus, .no-focus-outline:active {
     box-shadow: none !important;

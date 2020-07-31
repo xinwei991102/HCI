@@ -4,7 +4,9 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <h1 class="text-center" ><i class="fa fa-heart" style="font-size: medium"></i> Tops <i class="fa fa-heart" style="font-size: medium"></i></h1>
+                <h1 class="text-center" >
+                    <i class="fa fa-heart" style="font-size: medium"></i>&nbsp;Tops&nbsp;<i class="fa fa-heart" style="font-size: medium"></i>
+                </h1>
                 <hr />
             </div>
         </div>
