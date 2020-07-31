@@ -42,7 +42,7 @@
         </asp:ScriptManager>
     </form>
 
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light px-5">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light px-5 shadow">
         <a class="navbar-brand" href="Default.aspx">
             <img src="/Images/hciLogo.png" height="50" alt="Shiny Girl">
         </a>
@@ -63,7 +63,7 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tops
                     </a>
-                    <div class="dropdown-menu bg-light" aria-labelledby="navbarDropdown1">
+                    <div class="dropdown-menu bg-lighter shadow" aria-labelledby="navbarDropdown1">
                         <a class="dropdown-item" href="#">Blouses</a>
                         <a class="dropdown-item" href="#">T-Shirts</a>
                     </div>
@@ -71,7 +71,7 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Bottoms
                     </a>
-                    <div class="dropdown-menu bg-light" aria-labelledby="navbarDropdown2">
+                    <div class="dropdown-menu bg-lighter shadow" aria-labelledby="navbarDropdown2">
                         <a class="dropdown-item" href="#">Skirts</a>
                         <a class="dropdown-item" href="#">Shorts</a>
                         <a class="dropdown-item" href="#">Pants</a>
@@ -80,7 +80,7 @@
                 <li class="nav-item dropdown mr-3">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dresses
                     </a>
-                    <div class="dropdown-menu bg-light" aria-labelledby="navbarDropdown3">
+                    <div class="dropdown-menu bg-lighter shadow mb-3" aria-labelledby="navbarDropdown3">
                         <a class="dropdown-item" href="#">Mini Dresses</a>
                         <a class="dropdown-item" href="#">Midi Dresses</a>
                         <a class="dropdown-item" href="#">Maxi Dresses</a>
@@ -111,7 +111,7 @@
     <!-- Modal -->
     <div class="modal fade" id="logInSignUpModal" tabindex="-1" role="dialog" aria-labelledby="logInSignUpModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
+            <div class="modal-content shadow">
                 <div class="modal-body">
                     <ul class="nav nav-tabs" id="tabContent">
                         <li class="nav-item"><a class="nav-link active" href="#login" data-toggle="tab">Log In</a></li>
@@ -137,7 +137,10 @@
             </div>
         </div>
     </div>
-    <div class="container body-content">
+    <a class="btn no-focus-outline" onclick="topFunction()" id="topBtn" title="Go to top">
+        <i class="fa fa-angle-up" aria-hidden="true"></i>
+    </a>
+    <div class="px-5">
         <asp:ContentPlaceHolder ID="MainContent" runat="server">
         </asp:ContentPlaceHolder>
         <hr />
@@ -174,6 +177,26 @@
             } else {
                 sidenav.classList.remove("sticky");
             }
+        }
+
+        //Get the button:
+        mybutton = document.getElementById("topBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
         }
     </script>
 </body>
