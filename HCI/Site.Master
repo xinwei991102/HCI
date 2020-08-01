@@ -140,7 +140,7 @@
     <a class="btn no-focus-outline" onclick="topFunction()" id="topBtn" title="Go to top">
         <i class="fa fa-angle-up" aria-hidden="true"></i>
     </a>
-    <div class="px-5">
+    <div style="padding-left:100px; padding-right: 100px;">
         <asp:ContentPlaceHolder ID="MainContent" runat="server">
         </asp:ContentPlaceHolder>
         <hr />
