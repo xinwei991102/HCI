@@ -123,6 +123,7 @@
     <Content Include="Images\heart.png" />
     <Content Include="Images\product-image-01.jpg" />
     <Content Include="Product Details.aspx" />
+    <Content Include="Scripts\RangeSlider.js" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
