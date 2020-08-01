@@ -34,7 +34,7 @@
                         </select>
                     </div>
                     <div class="form-group mb-4">
-                        <label for="filterprice">Filter by Price</label>
+                        <label for="filterprice">Filter by Price Range</label>
                         <div class="row p-2" style="max-width: 300px;">
                             <div class="col-sm-12">
                                 <div id="slider-range"></div>
