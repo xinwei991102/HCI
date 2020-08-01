@@ -1,29 +1,30 @@
 ﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="HCI._Default" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-
+    
     <div class="row">
-        <div class="col">
-            <h1 class="text-center">
+        <div class="col text-center">
+            <h1 class="mt-2">
                 <i class="fa fa-heart" style="font-size: medium"></i>&nbsp;Blouses&nbsp;<i class="fa fa-heart" style="font-size: medium"></i>
             </h1>
-            <hr />
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-lg-3">
             <!-- breadcrumbs -->
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
+            <nav aria-label="breadcrumb" style="display:inline-block;">
+                <ol class="breadcrumb pb-0">
                     <li class="breadcrumb-item"><a href="#">All Products</a></li>
                     <li class="breadcrumb-item"><a href="#">Tops</a></li>
                     <li class="breadcrumb-item active" aria-current="page">Blouses</li>
                 </ol>
             </nav>
+            <hr class="mb-4"/>
+        </div>
+        
+    </div>
+    <div class="row">
+        <div class="col-lg-3">
             <!-- side bar -->
             <div class="sidenav bg-light shadow p-3" id="sidenav">
                 <form>
-                    <div class="form-group">
+                    <div class="form-group mb-4">
                         <label for="sortby">Sort by</label>
                         <select class="form-control no-focus-outline" id="sortby">
                             <option>Newest first</option>
@@ -32,7 +33,7 @@
                             <option>Popularity</option>
                         </select>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group mb-4">
                         <label for="filterprice">Filter by Price</label>
                         <div class="row p-2" style="max-width: 300px;">
                             <div class="col-sm-12">
@@ -53,7 +54,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group mb-4">
                         <label for="filtercolour">Filter by Colour</label>
                         <div class="btn-group-toggle" data-toggle="buttons">
                             <label class="btn active btn-colour" style="background-color:ghostwhite">
