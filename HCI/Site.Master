@@ -199,6 +199,9 @@
             document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
         }
 
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
     </script>
     <script src="Scripts/RangeSlider.js"></script>
 </body>
