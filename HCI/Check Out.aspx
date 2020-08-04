@@ -22,7 +22,7 @@
 
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4 order-md-2 mb-4">
+                    <div class="col-md-6 order-md-2 mb-4">
                         <h4 class="d-flex justify-content-between align-items-center mb-3">
                             <span class="text-muted">Your cart</span>
                             <span class="badge badge-secondary badge-pill">3</span>
@@ -71,8 +71,8 @@
                             </div>
                         </form>
                     </div>
-                    <div class="col-md-8 order-md-1">
-                        <h4 class="mb-3">Billing address</h4>
+                    <div class="col-md-6 order-md-1">
+                        <h4 class="mb-3">Shipping address</h4>
                         <form class="needs-validation" novalidate>
                             <div class="row">
                                 <div class="col-md-6 mb-3">
@@ -92,14 +92,11 @@
                             </div>
 
                             <div class="mb-3">
-                                <label for="username">Username</label>
+                                <label for="phoneNumber">Phone Number</label>
                                 <div class="input-group">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text">@</span>
-                                    </div>
-                                    <input type="text" class="form-control" id="username" placeholder="Username" required>
+                                    <input type="text" class="form-control" id="phoneNumber" placeholder="018-2221929" required>
                                     <div class="invalid-feedback" style="width: 100%;">
-                                        Your username is required.
+                                        Your phone number is required.
                                     </div>
                                 </div>
                             </div>
@@ -155,10 +152,6 @@
                                 </div>
                             </div>
                             <hr class="mb-4">
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="same-address">
-                                <label class="custom-control-label" for="same-address">Shipping address is the same as my billing address</label>
-                            </div>
                             <div class="custom-control custom-checkbox">
                                 <input type="checkbox" class="custom-control-input" id="save-info">
                                 <label class="custom-control-label" for="save-info">Save this information for next time</label>
@@ -219,15 +212,6 @@
                         </form>
                     </div>
                 </div>
-
-                <footer class="my-5 pt-5 text-muted text-center text-small">
-                    <p class="mb-1">&copy; 2017-2020 Shinny Girl</p>
-                    <ul class="list-inline">
-                        <li class="list-inline-item"><a href="#">Privacy</a></li>
-                        <li class="list-inline-item"><a href="#">Terms</a></li>
-                        <li class="list-inline-item"><a href="#">Support</a></li>
-                    </ul>
-                </footer>
             </div>
 
             <!-- Bootstrap core JavaScript
