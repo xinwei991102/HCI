@@ -22,25 +22,26 @@
     <div class="row">
         <div class="col-lg-3">
             <!-- side bar -->
-            <div class="sidenav bg-light shadow p-3" id="sidenav">
+            <div class="sidenav bg-light shadow p-4" id="sidenav">
                 <form>
-                    <div class="form-group mb-4">
+                    <div class="form-group">
                         <label for="sortby">Sort by</label>
-                        <select class="form-control no-focus-outline" id="sortby">
+                        <select class="form-control no-focus-outline" id="sortby" style="cursor:pointer;">
                             <option>Newest first</option>
                             <option>Price</option>
                             <option>Rating</option>
                             <option>Popularity</option>
                         </select>
                     </div>
-                    <div class="form-group mb-4">
+                    <hr />
+                    <div class="form-group">
                         <label for="filterprice">Filter by Price Range</label>
                         <div class="row p-2" style="max-width: 300px;">
                             <div class="col-sm-12">
                                 <div id="slider-range"></div>
                             </div>
                         </div>
-                        <div class="row slider-labels">
+                        <div class="row slider-labels mt-1" style="font-size: 15px;">
                             <div class="col">
                                 <span id="slider-range-value1"></span>
                                 &nbsp;-&nbsp;
@@ -54,26 +55,25 @@
                             </div>
                         </div>
                     </div>
-                    <div class="form-group mb-4">
+                    <hr />
+                    <div class="form-group">
                         <label for="filtercolour">Filter by Colour</label>
                         <div class="btn-group-toggle" data-toggle="buttons">
-                            <label class="btn active btn-colour" style="background-color:ghostwhite">
+                            <label class="btn active btn-colour" style="background-color:whitesmoke" title="White">
                                 <input type="checkbox" checked>
                             </label>
-                            <label class="btn btn-colour" style="background-color:cadetblue">
+                            <label class="btn active btn-colour" style="background-color:cadetblue" title="Blue">
+                                <input type="checkbox" checked>
+                            </label>
+                            <label class="btn btn-colour" style="background-color:rosybrown" title="Rose">
                                 <input type="checkbox">
                             </label>
-                            <label class="btn btn-colour" style="background-color:rosybrown">
-                                <input type="checkbox">
-                            </label>
-                            <label class="btn btn-colour" style="background-color:brown">
-                                <input type="checkbox">
-                            </label>
-                            <label class="btn btn-colour" style="background-color:darkolivegreen">
+                            <label class="btn btn-colour" style="background-color:brown" title="Brown">
                                 <input type="checkbox">
                             </label>
                         </div>
                     </div>
+                    <hr />
                     <div class="form-group">
                         <label for="filtersize">Filter by Size</label>
                         <div class="btn-group-toggle" data-toggle="buttons">
@@ -98,7 +98,7 @@
             <!-- product cards -->
             <% for (int i = 0; i < 6; i++)
                 { %>
-            <div class="card no-border shadow" style="width: 31%;">
+            <div class="card no-border shadow" style="width: 31%;" title="View Details">
                 <a href="Product Details.aspx" class="card-link">
                     <img src="/Images/product-image-01.jpg" class="card-img-top" alt="V Neck Button Blouse">
                     <div class="card-body">
