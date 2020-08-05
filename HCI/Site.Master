@@ -118,14 +118,33 @@
                     </ul>
                     <div class="tab-content">
                         <div class="tab-pane active" id="login">
-                            <p>put log in form here</p>
+                            <div class="text-center">
+                                <form>
+                                    <label for="Lusername">Username: </label>
+                                    <input type="text" name="Lusername"><br><br>
+                                    <label for="Lpassword">Password:</label>
+                                    <input type="text" name="Lpassword"><br><br>
+                                </form>
+                            </div>
                             <div class="text-center">
                                 <button type="button" class="btn btn-primary no-focus-outline">Log In</button>
                                 <button type="button" class="btn btn-secondary no-focus-outline" data-dismiss="modal">Cancel</button>
                             </div>
                         </div>
                         <div class="tab-pane" id="signup">
-                            <p>put sign up form here</p>
+                            <div class="text-center">
+                                <form>
+                                    <label for="Susername">Username: </label>
+                                    <input type="text" name="Susername"><br><br>
+                                    <label for="Semail">Email:</label>
+                                    <input type="text" name="Semail"><br><br>
+                                    <label for="Spassword">Password:</label>
+                                    <input type="text" name="Spassword"><br><br>
+                                    <label for="SCpassword">Confirm Password:</label>
+                                    <input type="text" name="SCpassword"><br><br>
+                                    <label>By signing up you accept the Term of Service and Privacy Policy.</label><br /><br />
+                                </form>
+                            </div>
                             <div class="text-center">
                                 <button type="button" class="btn btn-primary no-focus-outline">Sign Up</button>
                                 <button type="button" class="btn btn-secondary no-focus-outline" data-dismiss="modal">Cancel</button>
