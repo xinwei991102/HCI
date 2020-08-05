@@ -30,22 +30,22 @@
                         <ul class="list-group mb-3">
                             <li class="list-group-item d-flex justify-content-between lh-condensed">
                                 <div>
-                                    <h6 class="my-0">Product name</h6>
-                                    <small class="text-muted">Brief description</small>
+                                    <h6 class="my-0">Short Sleeve Shirt</h6>
+                                    <small class="text-muted">Blue-M</small>
                                 </div>
                                 <span class="text-muted">RM12</span>
                             </li>
                             <li class="list-group-item d-flex justify-content-between lh-condensed">
                                 <div>
-                                    <h6 class="my-0">Second product</h6>
-                                    <small class="text-muted">Brief description</small>
+                                    <h6 class="my-0">Long Sleeve Shirt</h6>
+                                    <small class="text-muted">Black-S</small>
                                 </div>
                                 <span class="text-muted">RM8</span>
                             </li>
                             <li class="list-group-item d-flex justify-content-between lh-condensed">
                                 <div>
-                                    <h6 class="my-0">Third item</h6>
-                                    <small class="text-muted">Brief description</small>
+                                    <h6 class="my-0">Long Pant</h6>
+                                    <small class="text-muted">Red-L</small>
                                 </div>
                                 <span class="text-muted">RM5</span>
                             </li>
@@ -111,15 +111,23 @@
 
                             <div class="mb-3">
                                 <label for="address">Address</label>
-                                <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+                                <input type="text" class="form-control" id="address" placeholder="Lot 10-2" required>
                                 <div class="invalid-feedback">
                                     Please enter your shipping address.
                                 </div>
                             </div>
 
                             <div class="mb-3">
-                                <label for="address2">Address 2 <span class="text-muted">(Optional)</span></label>
-                                <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+                                <label for="address2">Address 2</label>
+                                <input type="text" class="form-control" id="address2" placeholder="Janlan Pertama 2" required>
+                                <div class="invalid-feedback">
+                                    Please enter your shipping address.
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="address2">Address 3 <span class="text-muted">(Optional)</span></label>
+                                <input type="text" class="form-control" id="address3" placeholder="Taman Pertama">
                             </div>
 
                             <div class="row">
