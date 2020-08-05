@@ -115,7 +115,7 @@
                 <span class="float-right"><i class="fa fa-star"></i></span>
                 <span class="float-right"><i class="fa fa-star"></i></span>
                 <h5 style="letter-spacing: 0.1em;">SHORT SLEEVE BLAZER</h5>
-                
+                <p style="font-size: larger;" class="mb-2">RM 45.00</p>
                 <div>
                     <label>Color</label><br />
                     <div class="btn-group-toggle mb-2" data-toggle="buttons">
