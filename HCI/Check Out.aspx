@@ -110,16 +110,21 @@
                         </div>
 
                         <div class="mb-3">
-                            <label for="address">Address</label>
-                            <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+                            <label for="address">Address Line 1</label>
+                            <input type="text" class="form-control" id="address" placeholder="Lot 123" required style="max-width:100%;">
                             <div class="invalid-feedback">
                                 Please enter your shipping address.
                             </div>
                         </div>
 
                         <div class="mb-3">
-                            <label for="address2">Apartment / Suite <span class="text-muted">(Optional)</span></label>
-                            <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+                            <label for="address2">Address Line 2<span class="text-muted">(Optional)</span></label>
+                            <input type="text" class="form-control" id="address2" placeholder="Jalan ABC" style="max-width:100%;">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="address3">Address Line 3<span class="text-muted">(Optional)</span></label>
+                            <input type="text" class="form-control" id="address3" placeholder="Taman Bunga" style="max-width:100%;">
                         </div>
 
                         <div class="row">
@@ -159,7 +164,7 @@
                                 </div>
                             </div>
                             <div class="col-md-3 mb-3">
-                                <label for="zip">Zip</label>
+                                <label for="zip">Postcode</label>
                                 <input type="text" class="form-control" id="zip" placeholder="" required>
                                 <div class="invalid-feedback">
                                     Zip code required.
