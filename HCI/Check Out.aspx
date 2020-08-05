@@ -23,7 +23,7 @@
                 <div class="bg-light shadow p-4">
                     <h3 class="d-flex justify-content-between align-items-center my-3">
                         <span style="letter-spacing: 0.1em;">Your Cart</span>
-                        <span class="badge badge-secondary badge-pill">2</span>
+                        <span class="badge badge-secondary badge-pill" style="font-weight: 400;">2 items</span>
                     </h3>
                     <ul class="list-group mb-3">
                         <li class="list-group-item d-flex justify-content-between lh-condensed">
