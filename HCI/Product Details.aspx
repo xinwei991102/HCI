@@ -115,8 +115,7 @@
                 <span class="float-right"><i class="fa fa-star"></i></span>
                 <span class="float-right"><i class="fa fa-star"></i></span>
                 <h5 style="letter-spacing: 0.1em;">SHORT SLEEVE BLAZER</h5>
-                <span style="font-size: larger;">RM 45.00</span>
-                <hr />
+                
                 <div>
                     <label>Color</label><br />
                     <div class="btn-group-toggle mb-2" data-toggle="buttons">
@@ -148,6 +147,11 @@
                         data-target="#exampleModalCenter">
                         Add to Cart
                     </button>
+                </span>
+                <span>
+                    <a class="btn btn-primary no-focus-outline my-3" href="Check Out.aspx">
+                        Buy Now
+                    </a>
                 </span>
 
                 <!-- Modal -->
