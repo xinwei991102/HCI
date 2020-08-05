@@ -118,12 +118,12 @@
                     </ul>
                     <div class="tab-content">
                         <div class="tab-pane active" id="login">
-                            <div class="text-center">
+                            <div class="text-center m-5">
                                 <form>
                                     <label for="Lusername">Username: </label>
                                     <input type="text" name="Lusername"><br><br>
                                     <label for="Lpassword">Password:</label>
-                                    <input type="text" name="Lpassword"><br><br>
+                                    <input type="text" name="Lpassword"><br>
                                 </form>
                             </div>
                             <div class="text-center">
@@ -132,7 +132,7 @@
                             </div>
                         </div>
                         <div class="tab-pane" id="signup">
-                            <div class="text-center">
+                            <div class="text-center m-5">
                                 <form>
                                     <label for="Susername">Username: </label>
                                     <input type="text" name="Susername"><br><br>
@@ -142,7 +142,7 @@
                                     <input type="text" name="Spassword"><br><br>
                                     <label for="SCpassword">Confirm Password:</label>
                                     <input type="text" name="SCpassword"><br><br>
-                                    <label>By signing up you accept the Term of Service and Privacy Policy.</label><br /><br />
+                                    <label>By signing up you accept the Term of Service and Privacy Policy.</label><br />
                                 </form>
                             </div>
                             <div class="text-center">
