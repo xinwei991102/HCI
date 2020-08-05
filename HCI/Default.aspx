@@ -94,22 +94,22 @@
                 </form>
             </div>
         </div>
-        <div class="col">
+        <div class="col text-center">
             <!-- product cards -->
             <% for (int i = 0; i < 6; i++)
                 { %>
             <div class="card no-border shadow" style="width: 31%;" title="View Details">
                 <a href="Product Details.aspx" class="card-link">
-                    <img src="/Images/product-image-01.jpg" class="card-img-top" alt="V Neck Button Blouse">
+                    <img src="/Images/top-01.jpg" class="card-img-top" alt="V Neck Button Blouse">
                     <div class="card-body">
-                        <h5 class="card-title text-center mb-0">V Neck Button Blouse</h5>
+                        <h5 class="card-title text-center mb-0">Short Sleeve Blazer</h5>
                         <p class="card-text text-center mb-0">RM 45.00</p>
                         <p class="card-text text-center">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
-                            <i class="fa fa-star-half-o"></i>&nbsp;6 reviews
+                            <i class="fa fa-star-half-o"></i>&nbsp;3 reviews
                         </p>
                     </div>
                 </a>

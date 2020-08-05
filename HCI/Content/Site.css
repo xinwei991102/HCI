@@ -134,7 +134,7 @@ div.card:hover {
 }
 
 h1 {
-    letter-spacing: 0.1em;
+    letter-spacing: 0.1em !important;
 }
 
 .nav-link:hover, .dropdown-item:hover {
@@ -429,6 +429,7 @@ label {
     letter-spacing: 0.1em;
     font-size: 16px;
     font-weight: 500;
+    margin-bottom: 0.1rem !important;
 }
 
 .btn-colour {
@@ -438,12 +439,14 @@ label {
     border: solid white;
     margin-right: 10px;
     padding: 0 !important;
+    box-shadow: -1px 0 #BBBBBB, 0 1px #BBBBBB, 1px 0 #BBBBBB, 0 -1px #BBBBBB;
 }
 
 .btn-white {
     background-color: white;
     margin-right: 5px;
     margin-bottom: 5px !important;
+    box-shadow: -1px 0 #BBBBBB, 0 1px #BBBBBB, 1px 0 #BBBBBB, 0 -1px #BBBBBB !important;
 }
 
 .btn-white:active, .btn-colour:active {
@@ -454,9 +457,9 @@ label {
     box-shadow: none !important;
 }
 
-.btn-white:hover, .btn-colour:hover {
-    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1), 0 8px 24px 0 rgba(0, 0, 0, 0.1) !important;
-}
+    .btn-white:hover, .btn-colour:hover {
+        box-shadow: -1px 0 #BBBBBB, 0 1px #BBBBBB, 1px 0 #BBBBBB, 0 -1px #BBBBBB, 0 6px 10px 0 rgba(0, 0, 0, 0.1), 0 8px 24px 0 rgba(0, 0, 0, 0.1) !important;
+    }
 
 .btn-white.active, .btn-colour.active {
     box-shadow: -2px 0 #888888, 0 2px #888888, 2px 0 #888888, 0 -2px #888888 !important;
