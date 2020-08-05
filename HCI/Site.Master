@@ -145,7 +145,12 @@
         <asp:ContentPlaceHolder ID="MainContent" runat="server">
         </asp:ContentPlaceHolder>
         <hr />
-        <footer>
+        <footer class="text-center">
+            <span>
+                <button class="btn btn-light"><i class="fa fa-facebook"></i></button>
+                <button class="btn btn-light"><i class="fa fa-instagram"></i></button>
+                <button class="btn btn-light"><i class="fa fa-twitter-square"></i></button>
+            </span>
             <p>&copy; <%: DateTime.Now.Year %> - Shiny Girl Ltd.</p>
         </footer>
     </div>
