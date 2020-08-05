@@ -119,13 +119,13 @@
                 <div>
                     <label>Color</label><br />
                     <div class="btn-group-toggle mb-2" data-toggle="buttons">
-                        <label class="btn active btn-colour" style="background-color: ghostwhite;">
+                        <label class="btn active btn-colour" style="background-color: ghostwhite;" title="White">
                             <input type="radio" checked>
                         </label>
-                        <label class="btn btn-colour" style="background-color: cadetblue">
+                        <label class="btn btn-colour" style="background-color: cadetblue" title="Blue">
                             <input type="radio">
                         </label>
-                        <label class="btn btn-colour" style="background-color: rosybrown">
+                        <label class="btn btn-colour" style="background-color: rosybrown" title="Rose">
                             <input type="radio">
                         </label>
                     </div>
