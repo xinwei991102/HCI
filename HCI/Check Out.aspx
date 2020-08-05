@@ -23,40 +23,26 @@
                 <div class="bg-light shadow p-4">
                     <h3 class="d-flex justify-content-between align-items-center my-3">
                         <span style="letter-spacing: 0.1em;">Your Cart</span>
-                        <span class="badge badge-secondary badge-pill">3</span>
+                        <span class="badge badge-secondary badge-pill">2</span>
                     </h3>
                     <ul class="list-group mb-3">
                         <li class="list-group-item d-flex justify-content-between lh-condensed">
                             <div>
-                                <h6 class="my-0">Product name</h6>
-                                <small class="text-muted">Brief description</small>
+                                <h6 class="my-0">Short Sleeve Blazer x 1</h6>
+                                <small class="text-muted">White</small>
                             </div>
-                            <span class="text-muted">RM 12.00</span>
+                            <span class="text-muted">RM 45.00</span>
                         </li>
                         <li class="list-group-item d-flex justify-content-between lh-condensed">
                             <div>
-                                <h6 class="my-0">Second product</h6>
-                                <small class="text-muted">Brief description</small>
+                                <h6 class="my-0">Short Sleeve Blazer x 1</h6>
+                                <small class="text-muted">Blue</small>
                             </div>
-                            <span class="text-muted">RM 8.00</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between lh-condensed">
-                            <div>
-                                <h6 class="my-0">Third item</h6>
-                                <small class="text-muted">Brief description</small>
-                            </div>
-                            <span class="text-muted">RM 5.00</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between">
-                            <div class="text-success">
-                                <h6 class="my-0">Promo code</h6>
-                                <small>EXAMPLECODE</small>
-                            </div>
-                            <span class="text-success">-RM 5.00</span>
+                            <span class="text-muted">RM 45.00</span>
                         </li>
                         <li class="list-group-item d-flex justify-content-between">
                             <span>Total (MYR)</span>
-                            <strong>RM 20.00</strong>
+                            <strong>RM 90.00</strong>
                         </li>
                     </ul>
 
@@ -77,14 +63,14 @@
                         <div class="row">
                             <div class="col-md-6 mb-3">
                                 <label for="firstName">First name</label>
-                                <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                                <input type="text" class="form-control" id="firstName" placeholder="John" value="" required>
                                 <div class="invalid-feedback">
                                     Valid first name is required.
                                 </div>
                             </div>
                             <div class="col-md-6 mb-3">
                                 <label for="lastName">Last name</label>
-                                <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                                <input type="text" class="form-control" id="lastName" placeholder="Doe" value="" required>
                                 <div class="invalid-feedback">
                                     Valid last name is required.
                                 </div>
@@ -94,7 +80,7 @@
                         <div class="mb-3">
                             <label for="phoneNumber">Phone number</label>
                             <div class="input-group">
-                                <input type="text" class="form-control" id="phoneNumber" placeholder="e.g: 012-3456789" required>
+                                <input type="text" class="form-control" id="phoneNumber" placeholder="012-3456789" required>
                                 <div class="invalid-feedback" style="width: 100%;">
                                     Your phone number is required.
                                 </div>
@@ -165,7 +151,7 @@
                             </div>
                             <div class="col-md-3 mb-3">
                                 <label for="zip">Postcode</label>
-                                <input type="text" class="form-control" id="zip" placeholder="" required>
+                                <input type="text" class="form-control" id="zip" placeholder="58000" required>
                                 <div class="invalid-feedback">
                                     Zip code required.
                                 </div>
@@ -192,7 +178,7 @@
                         <div class="row">
                             <div class="col-md-6 mb-3">
                                 <label for="cc-name">Name on card</label>
-                                <input type="text" class="form-control" id="cc-name" placeholder="" required>
+                                <input type="text" class="form-control" id="cc-name" placeholder="John Doe" required>
                                 <small class="text-muted">Full name as displayed on card</small>
                                 <div class="invalid-feedback">
                                     Name on card is required
@@ -200,7 +186,7 @@
                             </div>
                             <div class="col-md-6 mb-3">
                                 <label for="cc-number">Card number</label>
-                                <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                                <input type="text" class="form-control" id="cc-number" placeholder="1111 2222 3333 4444" required>
                                 <div class="invalid-feedback">
                                     Credit card number is required
                                 </div>
@@ -209,14 +195,14 @@
                         <div class="row">
                             <div class="col-md-3 mb-3">
                                 <label for="cc-expiration">Expiration</label>
-                                <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+                                <input type="text" class="form-control" id="cc-expiration" placeholder="12/34" required>
                                 <div class="invalid-feedback">
                                     Expiration date required
                                 </div>
                             </div>
                             <div class="col-md-3 mb-3">
                                 <label for="cc-expiration">CVV</label>
-                                <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                                <input type="text" class="form-control" id="cc-cvv" placeholder="123" required>
                                 <div class="invalid-feedback">
                                     Security code required
                                 </div>
