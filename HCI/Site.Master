@@ -118,14 +118,33 @@
                     </ul>
                     <div class="tab-content">
                         <div class="tab-pane active" id="login">
-                            <p>put log in form here</p>
+                            <div class="text-center m-5">
+                                <form>
+                                    <label for="Lusername">Username: </label>
+                                    <input type="text" name="Lusername"><br><br>
+                                    <label for="Lpassword">Password:</label>
+                                    <input type="text" name="Lpassword"><br>
+                                </form>
+                            </div>
                             <div class="text-center">
                                 <button type="button" class="btn btn-primary no-focus-outline">Log In</button>
                                 <button type="button" class="btn btn-secondary no-focus-outline" data-dismiss="modal">Cancel</button>
                             </div>
                         </div>
                         <div class="tab-pane" id="signup">
-                            <p>put sign up form here</p>
+                            <div class="text-center m-5">
+                                <form>
+                                    <label for="Susername">Username: </label>
+                                    <input type="text" name="Susername"><br><br>
+                                    <label for="Semail">Email:</label>
+                                    <input type="text" name="Semail"><br><br>
+                                    <label for="Spassword">Password:</label>
+                                    <input type="text" name="Spassword"><br><br>
+                                    <label for="SCpassword">Confirm Password:</label>
+                                    <input type="text" name="SCpassword"><br><br>
+                                    <label>By signing up you accept the Term of Service and Privacy Policy.</label><br />
+                                </form>
+                            </div>
                             <div class="text-center">
                                 <button type="button" class="btn btn-primary no-focus-outline">Sign Up</button>
                                 <button type="button" class="btn btn-secondary no-focus-outline" data-dismiss="modal">Cancel</button>
@@ -136,14 +155,21 @@
             </div>
         </div>
     </div>
+
     <a class="btn no-focus-outline" onclick="topFunction()" id="topBtn" title="Go to top">
         <i class="fa fa-angle-up" aria-hidden="true"></i>
     </a>
-    <div style="padding-left:100px; padding-right: 100px;">
+
+    <div style="padding-left: 100px; padding-right: 100px;">
         <asp:ContentPlaceHolder ID="MainContent" runat="server">
         </asp:ContentPlaceHolder>
         <hr />
-        <footer>
+        <footer class="text-center">
+            <span>
+                <button class="btn btn-light"><i class="fa fa-facebook"></i></button>
+                <button class="btn btn-light"><i class="fa fa-instagram"></i></button>
+                <button class="btn btn-light"><i class="fa fa-twitter-square"></i></button>
+            </span>
             <p>&copy; <%: DateTime.Now.Year %> - Shiny Girl Ltd.</p>
         </footer>
     </div>
@@ -168,15 +194,18 @@
         window.onscroll = function () { myFunction() };
 
         var sidenav = document.getElementById("sidenav");
-        var sticky = sidenav.offsetTop;
+        if (sidenav != null) {
+            var sticky = sidenav.offsetTop;
 
-        function myFunction() {
-            if (window.pageYOffset >= sticky + 76) {
-                sidenav.classList.add("sticky")
-            } else {
-                sidenav.classList.remove("sticky");
+            function myFunction() {
+                if (window.pageYOffset >= sticky + 76) {
+                    sidenav.classList.add("sticky")
+                } else {
+                    sidenav.classList.remove("sticky");
+                }
             }
         }
+
 
         //Get the button:
         mybutton = document.getElementById("topBtn");
@@ -311,6 +340,37 @@
         magnify("img1", 1.5);
         magnify("img2", 1.5);
         magnify("img3", 1.5);
+    </script>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/vendor/holder.min.js"></script>
+    <script>
+            // Example starter JavaScript for disabling form submissions if there are invalid fields
+            (function () {
+                'use strict';
+
+                window.addEventListener('load', function () {
+                    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                    var forms = document.getElementsByClassName('needs-validation');
+
+                    // Loop over them and prevent submission
+                    var validation = Array.prototype.filter.call(forms, function (form) {
+                        form.addEventListener('submit', function (event) {
+                            if (form.checkValidity() === false) {
+                                event.preventDefault();
+                                event.stopPropagation();
+                            }
+                            form.classList.add('was-validated');
+                        }, false);
+                    });
+                }, false);
+            })();
     </script>
 </body>
 </html>
