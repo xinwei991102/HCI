@@ -111,8 +111,8 @@
     <div class="modal fade" id="logInSignUpModal" tabindex="-1" role="dialog" aria-labelledby="logInSignUpModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content shadow">
-                <div class="modal-body">
-                    <ul class="nav nav-tabs bg-light" id="tabContent">
+                <div class="modal-body bg-light">
+                    <ul class="nav nav-tabs" id="tabContent">
                         <li class="nav-item"><a class="nav-link active" href="#login" data-toggle="tab">Log In</a></li>
                         <li class="nav-item"><a class="nav-link" href="#signup" data-toggle="tab">Sign Up</a></li>
                     </ul>
