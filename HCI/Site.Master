@@ -54,35 +54,35 @@
         <div class="collapse navbar-collapse justify-content-stretch" id="navbarSupportedContent">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">On Sale</a>
+                    <a class="nav-link" href="Default.aspx">On Sale</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">New Arrivals</a>
+                    <a class="nav-link" href="Default.aspx">New Arrivals</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tops
                     </a>
                     <div class="dropdown-menu bg-lighter shadow" aria-labelledby="navbarDropdown1">
-                        <a class="dropdown-item" href="#">Blouses</a>
-                        <a class="dropdown-item" href="#">T-Shirts</a>
+                        <a class="dropdown-item" href="Default.aspx">Blouses</a>
+                        <a class="dropdown-item" href="Default.aspx">T-Shirts</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Bottoms
                     </a>
                     <div class="dropdown-menu bg-lighter shadow" aria-labelledby="navbarDropdown2">
-                        <a class="dropdown-item" href="#">Skirts</a>
-                        <a class="dropdown-item" href="#">Shorts</a>
-                        <a class="dropdown-item" href="#">Pants</a>
+                        <a class="dropdown-item" href="Default.aspx">Skirts</a>
+                        <a class="dropdown-item" href="Default.aspx">Shorts</a>
+                        <a class="dropdown-item" href="Default.aspx">Pants</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown mr-3">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dresses
                     </a>
                     <div class="dropdown-menu bg-lighter shadow mb-3" aria-labelledby="navbarDropdown3">
-                        <a class="dropdown-item" href="#">Mini Dresses</a>
-                        <a class="dropdown-item" href="#">Midi Dresses</a>
-                        <a class="dropdown-item" href="#">Maxi Dresses</a>
+                        <a class="dropdown-item" href="Default.aspx">Mini Dresses</a>
+                        <a class="dropdown-item" href="Default.aspx">Midi Dresses</a>
+                        <a class="dropdown-item" href="Default.aspx">Maxi Dresses</a>
                     </div>
                 </li>
             </ul>
@@ -118,21 +118,21 @@
                     </ul>
                     <div class="tab-content">
                         <div class="tab-pane active" id="login">
-                            <div class="text-center">
+                            <div class="text-center m-5">
                                 <form>
                                     <br /><label for="Lusername">Username: </label>
                                     <input type="text" name="Lusername"><br><br>
                                     <label for="Lpassword">Password:</label>
-                                    <input type="text" name="Lpassword"><br><br>
+                                    <input type="text" name="Lpassword"><br>
                                 </form>
                             </div>
                             <div class="text-center">
-                                <button type="button" class="btn btn-primary no-focus-outline">Log In</button>
+                                <button type="button" class="btn btn-primary no-focus-outline"  data-dismiss="modal">Log In</button>
                                 <button type="button" class="btn btn-secondary no-focus-outline" data-dismiss="modal">Cancel</button>
                             </div>
                         </div>
                         <div class="tab-pane" id="signup">
-                            <div class="text-center">
+                            <div class="text-center m-5">
                                 <form>
                                     <br /><label for="Susername">Username: </label>
                                     <input type="text" name="Susername"><br><br>
@@ -142,11 +142,11 @@
                                     <input type="text" name="Spassword"><br><br>
                                     <label for="SCpassword">Confirm Password:</label>
                                     <input type="text" name="SCpassword"><br><br>
-                                    <label>By signing up you accept the Term of Service and Privacy Policy.</label><br /><br />
+                                    <label>By signing up you accept the Term of Service and Privacy Policy.</label><br />
                                 </form>
                             </div>
                             <div class="text-center">
-                                <button type="button" class="btn btn-primary no-focus-outline">Sign Up</button>
+                                <button type="button" class="btn btn-primary no-focus-outline"  data-dismiss="modal">Sign Up</button>
                                 <button type="button" class="btn btn-secondary no-focus-outline" data-dismiss="modal">Cancel</button>
                             </div>
                         </div>
