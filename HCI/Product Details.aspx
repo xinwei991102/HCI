@@ -70,7 +70,7 @@
     <div class="container-fluid">
         <!-- Product Images Slideshow & Details -->
         <div class="row">
-            <div class="col">
+            <div class="col-md mb-4">
                 <div id="ProductCarousel" class="carousel slide carousel-thumbnails">
                     <div class="carousel-inner img-magnifier-container" style="margin-bottom: 50px;">
                         <div class="carousel-item active">
@@ -108,7 +108,7 @@
                 </div>
             </div>
 
-            <div class="col-7">
+            <div class="col-md-7">
                 <span class="float-right"><i class="fa fa-star-half-o"></i></span>
                 <span class="float-right"><i class="fa fa-star"></i></span>
                 <span class="float-right"><i class="fa fa-star"></i></span>
@@ -119,13 +119,13 @@
                 <div>
                     <label>Color</label><br />
                     <div class="btn-group-toggle mb-2" data-toggle="buttons">
-                        <label class="btn active btn-colour" style="background-color: ghostwhite;">
+                        <label class="btn active btn-colour" style="background-color: ghostwhite;" title="White">
                             <input type="radio" checked>
                         </label>
-                        <label class="btn btn-colour" style="background-color: cadetblue">
+                        <label class="btn btn-colour" style="background-color: cadetblue" title="Blue">
                             <input type="radio">
                         </label>
-                        <label class="btn btn-colour" style="background-color: rosybrown">
+                        <label class="btn btn-colour" style="background-color: rosybrown" title="Rose">
                             <input type="radio">
                         </label>
                     </div>
@@ -162,8 +162,8 @@
                             <h5 class="modal-body m-4">Item added to cart!
                             </h5>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                <a href="Cart.aspx" type="button" class="btn btn-primary">View Cart</a>
+                                <button type="button" class="btn btn-secondary no-focus-outline" data-dismiss="modal">Close</button>
+                                <a href="Cart.aspx" type="button" class="btn btn-primary no-focus-outline">View Cart</a>
                             </div>
                         </div>
                     </div>

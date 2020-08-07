@@ -163,7 +163,7 @@
                         </div>
                         <hr class="mb-4">
 
-                        <h4 class="mb-3" style="letter-spacing:0.1em;">Payment Information</h4>
+                        <h3 class="mb-3" style="letter-spacing:0.1em;">Payment Information</h3>
 
                         <div class="d-block my-3">
                             <div class="custom-control custom-radio">
