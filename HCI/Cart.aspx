@@ -42,27 +42,36 @@
                                 </tr>
                             </thead>
                             <tbody>
+                                <% for (int i = 0; i < 2; i++)
+                                    { %>
                                     <tr>
                                     <th scope="row" class="border-0">
                                         <div class="p-2">
                                             <!--image-->
-                                            <img src="/Images/top-01.jpg" alt="V Neck Button Blouse" style="width:120px;">
+                                            <img src="/Images/product-image-01.jpg" alt="V Neck Button Blouse" style="width:120px;">
                                             <div class="ml-3 d-inline-block align-middle">
-                                                <h5 class="mb-0">Product Name</h5>
-                                                <span class="text-muted font-weight-normal font-italic d-block">Category: </span>
+                                                <h5 class="mb-0">Short Sleeve Blazer</h5>
+                                                <span class="text-muted font-weight-normal font-italic d-block">White </span>
                                             </div>
                                         </div>
                                     </th>
                                     
-                                    <td class="border-0 align-middle" id="price"><strong>RM xx.xx</strong></td>
+                                    <td class="border-0 align-middle" id="price"><strong>RM 45.00</strong></td>
                                     <td class="border-0 align-middle">
-                                        <input type="number" id="quantity" step="1" max="99" min="1" value="1" />
+                                        <div class="input-group">
+                                        <span>
+                                        <input type='button' value='-' class='qtyminus btn btn-secondary mr-0 no-focus-outline' field='quantity' style="width: 30px; border-radius: 5px 0px 0px 5px; height: 30px; padding: 0;" /></span>
+                                        <input type='text' name='quantity' value='1' class='qty no-focus-outline' style="max-width: 60px; text-align: center; border-radius: 0px; border: 1px solid #666666 !important; height: 30px;" />
+                                        <span>
+                                        <input type='button' value='+' class='qtyplus btn btn-secondary ml-0 no-focus-outline' field='quantity' style="width: 30px; border-radius: 0px 5px 5px 0px; height: 30px; padding: 0;" /></span>
+                                        </div>
                                     </td>
-                                    <td class="border-0 align-middle">
-                                        del 
+                                    <td class="border-0 align-middle btn-group-toggle" data-toggle="buttons">
+                                        <button class="btn btn-white">X</button>
+                                        
                                     </td>
                                     </tr>
-                                
+                                 <% } %>
                             </tbody>
                         </table>
                     </div>
@@ -70,10 +79,15 @@
 
                 </div>
             </div>
+
             <div class="row">
                 <div class="col text-right pb-3 align-middle">
-                    Total: <strong><asp:Label ID="LabelTotalPrice" runat="server">RM 999.00</asp:Label></strong>
-                    <br /><br />
+                    Total: <strong><asp:Label ID="LabelTotalPrice" runat="server">RM 90.00</asp:Label></strong>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col pb-3 text-right align-middle">                    
                     <a href="Default.aspx" class="btn btn-primary no-focus-outline">Continue Shopping</a>
                     <a href="Check Out.aspx" class="btn btn-primary no-focus-outline">Check Out</a>
                 </div>

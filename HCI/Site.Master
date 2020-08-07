@@ -112,18 +112,26 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content shadow">
                 <div class="modal-body">
-                    <ul class="nav nav-tabs" id="tabContent">
+                    <ul class="nav nav-tabs bg-light" id="tabContent">
                         <li class="nav-item"><a class="nav-link active" href="#login" data-toggle="tab">Log In</a></li>
                         <li class="nav-item"><a class="nav-link" href="#signup" data-toggle="tab">Sign Up</a></li>
                     </ul>
                     <div class="tab-content">
                         <div class="tab-pane active" id="login">
-                            <div class="text-center m-5">
-                                <form>
-                                    <br /><label for="Lusername">Username: </label>
-                                    <input type="text" name="Lusername"><br><br>
-                                    <label for="Lpassword">Password:</label>
-                                    <input type="text" name="Lpassword"><br>
+                            <div class="m-5">
+                                <form class="needs-validation" novalidate>
+                                    <br />
+                                    <label for="Lusername">Username</label>
+                                    <input type="text" class="form-control" id="Lusername" placeholder="Username"  required>
+                                    <div class="invalid-feedback">
+                                        Valid username is required.
+                                    </div>
+                                    <br />
+                                    <label for="Lpassword">Password</label>
+                                    <input type="password" class="form-control" id="Lpassword" placeholder="Password"  required>
+                                    <div class="invalid-feedback">
+                                        Valid password is required.
+                                    </div>
                                 </form>
                             </div>
                             <div class="text-center">
@@ -132,17 +140,35 @@
                             </div>
                         </div>
                         <div class="tab-pane" id="signup">
-                            <div class="text-center m-5">
+                            <div class="m-5">
                                 <form>
-                                    <br /><label for="Susername">Username: </label>
-                                    <input type="text" name="Susername"><br><br>
-                                    <label for="Semail">Email:</label>
-                                    <input type="text" name="Semail"><br><br>
-                                    <label for="Spassword">Password:</label>
-                                    <input type="text" name="Spassword"><br><br>
-                                    <label for="SCpassword">Confirm Password:</label>
-                                    <input type="text" name="SCpassword"><br><br>
-                                    <label>By signing up you accept the Term of Service and Privacy Policy.</label><br />
+                                    <label for="Susername">Username</label>
+                                    <input type="text" class="form-control" id="Susername" placeholder="Username"  required>
+                                    <div class="invalid-feedback">
+                                        Valid username is required.
+                                    </div>
+                                    <br />
+                                    <label for="Semail">Email</label>
+                                    <input type="email" class="form-control" id="Semail" placeholder="you@example.com"  required>
+                                    <div class="invalid-feedback">
+                                        Please enter a valid email address for shipping updates.
+                                    </div>
+                                    <br />
+                                    <label for="Spassword">Password</label><br />
+                                    <input type="password" class="form-control" id="Spassword" placeholder="Password"  required>
+                                    <div class="invalid-feedback">
+                                        Valid password is required.
+                                    </div>
+                                    <br />
+                                    <label for="Scpassword">Confirm Password</label>
+                                    <input type="password" class="form-control" id="Scpassword" placeholder="Confirm Password"  required>
+                                    <div class="invalid-feedback">
+                                        Password entered is not same.
+                                    </div>
+
+                                    <br />
+                                    <label>By signing up you accept the Term of Service and Privacy Policy.</label>
+                                    <br />
                                 </form>
                             </div>
                             <div class="text-center">
