@@ -46,7 +46,7 @@
                                     <th scope="row" class="border-0">
                                         <div class="p-2">
                                             <!--image-->
-                                            <img src="/Images/top-01.jpg" class="card-img-top" alt="V Neck Button Blouse" width:70px;>
+                                            <img src="/Images/top-01.jpg" alt="V Neck Button Blouse" style="width:120px;">
                                             <div class="ml-3 d-inline-block align-middle">
                                                 <h5 class="mb-0">Product Name</h5>
                                                 <span class="text-muted font-weight-normal font-italic d-block">Category: </span>
