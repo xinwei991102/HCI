@@ -120,7 +120,7 @@
                         <div class="tab-pane active" id="login">
                             <div class="text-center">
                                 <form>
-                                    <label for="Lusername">Username: </label>
+                                    <br /><label for="Lusername">Username: </label>
                                     <input type="text" name="Lusername"><br><br>
                                     <label for="Lpassword">Password:</label>
                                     <input type="text" name="Lpassword"><br><br>
@@ -134,7 +134,7 @@
                         <div class="tab-pane" id="signup">
                             <div class="text-center">
                                 <form>
-                                    <label for="Susername">Username: </label>
+                                    <br /><label for="Susername">Username: </label>
                                     <input type="text" name="Susername"><br><br>
                                     <label for="Semail">Email:</label>
                                     <input type="text" name="Semail"><br><br>
