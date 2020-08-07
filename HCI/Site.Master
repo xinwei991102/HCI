@@ -149,7 +149,7 @@
                                     </div>
                                     <br />
                                     <label for="Semail">Email</label>
-                                    <input type="email" class="form-control" id="Semail" placeholder="you@example.com"  required>
+                                    <input type="email" class="form-control" id="Semail" placeholder="email@example.com"  required>
                                     <div class="invalid-feedback">
                                         Please enter a valid email address for shipping updates.
                                     </div>
