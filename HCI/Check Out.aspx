@@ -17,49 +17,34 @@
             <link href="form-validation.css" rel="stylesheet">
         </div>--%>
 
-        <div class="bg-light">
-
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 order-md-2 mb-4">
-                        <h4 class="d-flex justify-content-between align-items-center mb-3">
-                            <span class="text-muted">Your cart</span>
-                            <span class="badge badge-secondary badge-pill">3</span>
-                        </h4>
-                        <ul class="list-group mb-3">
-                            <li class="list-group-item d-flex justify-content-between lh-condensed">
-                                <div>
-                                    <h6 class="my-0">Short Sleeve Shirt</h6>
-                                    <small class="text-muted">Blue-M</small>
-                                </div>
-                                <span class="text-muted">RM12</span>
-                            </li>
-                            <li class="list-group-item d-flex justify-content-between lh-condensed">
-                                <div>
-                                    <h6 class="my-0">Long Sleeve Shirt</h6>
-                                    <small class="text-muted">Black-L</small>
-                                </div>
-                                <span class="text-muted">RM8</span>
-                            </li>
-                            <li class="list-group-item d-flex justify-content-between lh-condensed">
-                                <div>
-                                    <h6 class="my-0">Long Pants</h6>
-                                    <small class="text-muted">Black-L</small>
-                                </div>
-                                <span class="text-muted">RM5</span>
-                            </li>
-                            <li class="list-group-item d-flex justify-content-between bg-light">
-                                <div class="text-success">
-                                    <h6 class="my-0">Promo code</h6>
-                                    <small>EXAMPLECODE</small>
-                                </div>
-                                <span class="text-success">-RM5</span>
-                            </li>
-                            <li class="list-group-item d-flex justify-content-between">
-                                <span>Total (MYR)</span>
-                                <strong>RM20</strong>
-                            </li>
-                        </ul>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 order-md-2 mb-4">
+                <div class="bg-light shadow p-4">
+                    <h3 class="d-flex justify-content-between align-items-center my-3">
+                        <span style="letter-spacing: 0.1em;">Your Cart</span>
+                        <span class="badge badge-secondary badge-pill" style="font-weight: 400;">2 items</span>
+                    </h3>
+                    <ul class="list-group mb-3">
+                        <li class="list-group-item d-flex justify-content-between lh-condensed">
+                            <div>
+                                <h6 class="my-0">Short Sleeve Blazer x 1</h6>
+                                <small class="text-muted">White</small>
+                            </div>
+                            <span class="text-muted">RM 45.00</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between lh-condensed">
+                            <div>
+                                <h6 class="my-0">Short Sleeve Blazer x 1</h6>
+                                <small class="text-muted">Blue</small>
+                            </div>
+                            <span class="text-muted">RM 45.00</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between">
+                            <span>Total (MYR)</span>
+                            <strong>RM 90.00</strong>
+                        </li>
+                    </ul>
 
                     <form class="card p-2" style="width: 100%">
                         <div class="input-group">
@@ -78,14 +63,14 @@
                         <div class="row">
                             <div class="col-md-6 mb-3">
                                 <label for="firstName">First name</label>
-                                <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                                <input type="text" class="form-control" id="firstName" placeholder="John" value="" required>
                                 <div class="invalid-feedback">
                                     Valid first name is required.
                                 </div>
                             </div>
                             <div class="col-md-6 mb-3">
                                 <label for="lastName">Last name</label>
-                                <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                                <input type="text" class="form-control" id="lastName" placeholder="Doe" value="" required>
                                 <div class="invalid-feedback">
                                     Valid last name is required.
                                 </div>
@@ -95,7 +80,7 @@
                         <div class="mb-3">
                             <label for="phoneNumber">Phone number</label>
                             <div class="input-group">
-                                <input type="text" class="form-control" id="phoneNumber" placeholder="e.g: 012-3456789" required>
+                                <input type="text" class="form-control" id="phoneNumber" placeholder="012-3456789" required>
                                 <div class="invalid-feedback" style="width: 100%;">
                                     Your phone number is required.
                                 </div>
@@ -110,24 +95,21 @@
                             </div>
                         </div>
 
-                            <div class="mb-3">
-                                <label for="address">Address</label>
-                                <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
-                                <div class="invalid-feedback">
-                                    Please enter your shipping address.
-                                </div>
+                        <div class="mb-3">
+                            <label for="address">Address Line 1</label>
+                            <input type="text" class="form-control" id="address" placeholder="Lot 123" required>
+                            <div class="invalid-feedback">
+                                Please enter your shipping address.
                             </div>
-
-                            <div class="mb-3">
-                                <label for="address2">Address 2</label>
-                                <input type="text" class="form-control" id="address2" placeholder="Jalan Bunga 2" required>
-                                <div class="invalid-feedback">
-                                    Please enter your shipping address.
-                                </div>
-                            </div>
+                        </div>
 
                         <div class="mb-3">
-                            <label for="address3">Address 3<span class="text-muted">(Optional)</span></label>
+                            <label for="address2">Address Line 2<span class="text-muted">(Optional)</span></label>
+                            <input type="text" class="form-control" id="address2" placeholder="Jalan ABC">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="address3">Address Line 3<span class="text-muted">(Optional)</span></label>
                             <input type="text" class="form-control" id="address3" placeholder="Taman Bunga">
                         </div>
 
@@ -169,7 +151,7 @@
                             </div>
                             <div class="col-md-3 mb-3">
                                 <label for="zip">Postcode</label>
-                                <input type="text" class="form-control" id="zip" placeholder="" required>
+                                <input type="text" class="form-control" id="zip" placeholder="58000" required>
                                 <div class="invalid-feedback">
                                     Zip code required.
                                 </div>
@@ -196,7 +178,7 @@
                         <div class="row">
                             <div class="col-md-6 mb-3">
                                 <label for="cc-name">Name on card</label>
-                                <input type="text" class="form-control" id="cc-name" placeholder="" required>
+                                <input type="text" class="form-control" id="cc-name" placeholder="John Doe" required>
                                 <small class="text-muted">Full name as displayed on card</small>
                                 <div class="invalid-feedback">
                                     Name on card is required
@@ -204,7 +186,7 @@
                             </div>
                             <div class="col-md-6 mb-3">
                                 <label for="cc-number">Card number</label>
-                                <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                                <input type="text" class="form-control" id="cc-number" placeholder="1111 2222 3333 4444" required>
                                 <div class="invalid-feedback">
                                     Credit card number is required
                                 </div>
@@ -213,14 +195,14 @@
                         <div class="row">
                             <div class="col-md-3 mb-3">
                                 <label for="cc-expiration">Expiration</label>
-                                <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+                                <input type="text" class="form-control" id="cc-expiration" placeholder="12/34" required>
                                 <div class="invalid-feedback">
                                     Expiration date required
                                 </div>
                             </div>
                             <div class="col-md-3 mb-3">
                                 <label for="cc-expiration">CVV</label>
-                                <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                                <input type="text" class="form-control" id="cc-cvv" placeholder="123" required>
                                 <div class="invalid-feedback">
                                     Security code required
                                 </div>

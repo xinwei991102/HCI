@@ -114,8 +114,8 @@
                 <span class="float-right"><i class="fa fa-star"></i></span>
                 <span class="float-right"><i class="fa fa-star"></i></span>
                 <span class="float-right"><i class="fa fa-star"></i></span>
-                <h5 style="letter-spacing: 0.1em;">SHORT SLEEVE BLAZER</h5>
-                <p style="font-size: larger;" class="mb-2">RM 45.00</p>
+                <h4 style="letter-spacing: 0.1em;">SHORT SLEEVE BLAZER</h4>
+                <p style="font-size: x-large; font-weight:300;" class="mb-4">RM 45.00</p>
                 <div>
                     <label>Color</label><br />
                     <div class="btn-group-toggle mb-2" data-toggle="buttons">
@@ -127,10 +127,11 @@
                         </label>
                         <label class="btn btn-colour" style="background-color: rosybrown">
                             <input type="radio">
+                        </label>
                     </div>
                 </div>
 
-                <div>
+                <div class="mb-3">
                     <label>Quantity</label>
                     <br />
                     <div class="input-group">
@@ -143,13 +144,13 @@
                 </div>
 
                 <span>
-                    <button class="btn btn-primary no-focus-outline my-3" data-toggle="modal"
+                    <button class="btn btn-primary no-focus-outline my-3" data-toggle="modal" style="width: 150px; height: 50px;"
                         data-target="#exampleModalCenter">
                         Add to Cart
                     </button>
                 </span>
                 <span>
-                    <a class="btn btn-secondary no-focus-outline my-3" href="Check Out.aspx">
+                    <a class="btn btn-secondary no-focus-outline my-3" href="Check Out.aspx"  style="width: 150px; height: 50px; padding-top: 13px;">
                         Buy Now
                     </a>
                 </span>
