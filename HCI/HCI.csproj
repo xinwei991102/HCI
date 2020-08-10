@@ -126,6 +126,7 @@
     <Content Include="Images\top-01.jpg" />
     <Content Include="Images\top-02.jpg" />
     <Content Include="Images\top-03.jpg" />
+    <Content Include="Payment Complete.aspx" />
     <Content Include="Product Details.aspx" />
     <Content Include="Scripts\RangeSlider.js" />
     <Content Include="Scripts\bootstrap.bundle.js" />
@@ -297,6 +298,13 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Payment Complete.aspx.cs">
+      <DependentUpon>Payment Complete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Payment Complete.aspx.designer.cs">
+      <DependentUpon>Payment Complete.aspx</DependentUpon>
     </Compile>
     <Compile Include="Product Details.aspx.cs">
       <DependentUpon>Product Details.aspx</DependentUpon>

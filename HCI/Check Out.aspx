@@ -16,7 +16,21 @@
             <!-- Custom styles for this template -->
             <link href="form-validation.css" rel="stylesheet">
         </div>--%>
-
+    <div class="row">
+        <div class="col text-center">
+            <h1 class="mt-2">
+                <i class="fa fa-heart" style="font-size: medium"></i>&nbsp;Check Out&nbsp;<i class="fa fa-heart" style="font-size: medium"></i>
+            </h1>
+            <!-- breadcrumbs -->
+            <nav aria-label="breadcrumb" style="display: inline-block;">
+                <ol class="breadcrumb pb-3">
+                    <li class="breadcrumb-item"><a href="Default.aspx">Home</a></li>
+                    <li class="breadcrumb-item"><a href="Cart.aspx">Cart</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Check Out</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
     <div class="container">
         <div class="row">
             <div class="col-md-6 order-md-2 mb-4">
@@ -59,7 +73,7 @@
             <div class="col-md-6 order-md-1">
                 <div class="bg-light shadow p-4">
                     <h3 class="my-3" style="letter-spacing: 0.1em;">Shipping Information</h3>
-                    <form class="needs-validation" novalidate>
+                    <form class="needs-validation" novalidate action="Payment Complete.aspx">
                         <div class="row">
                             <div class="col-md-6 mb-3">
                                 <label for="firstName">First name</label>
@@ -88,8 +102,8 @@
                         </div>
 
                         <div class="mb-3">
-                            <label for="email">Email <span class="text-muted">(Optional)</span></label>
-                            <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
                             <div class="invalid-feedback">
                                 Please enter a valid email address for shipping updates.
                             </div>
@@ -163,7 +177,7 @@
                         </div>
                         <hr class="mb-4">
 
-                        <h3 class="mb-3" style="letter-spacing:0.1em;">Payment Information</h3>
+                        <h3 class="mb-3" style="letter-spacing: 0.1em;">Payment Information</h3>
 
                         <div class="d-block my-3">
                             <div class="custom-control custom-radio">
@@ -208,7 +222,7 @@
                                 </div>
                             </div>
                         </div>
-                        <button class="btn btn-primary btn-lg btn-block no-focus-outline" type="submit">Continue to checkout</button>
+                        <button class="btn btn-primary btn-lg btn-block no-focus-outline" type="submit">Continue to payment</button>
                     </form>
                 </div>
             </div>
