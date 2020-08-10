@@ -111,7 +111,7 @@
     <div class="modal fade" id="logInSignUpModal" tabindex="-1" role="dialog" aria-labelledby="logInSignUpModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content shadow">
-                <div class="modal-body bg-light">
+                <div class="modal-body">
                     <ul class="nav nav-tabs" id="tabContent">
                         <li class="nav-item"><a class="nav-link active" href="#login" data-toggle="tab">Log In</a></li>
                         <li class="nav-item"><a class="nav-link" href="#signup" data-toggle="tab">Sign Up</a></li>
@@ -122,13 +122,13 @@
                                 <form class="needs-validation" novalidate>
                                     <br />
                                     <label for="Lusername">Username</label>
-                                    <input type="text" class="form-control" id="Lusername" placeholder="Username"  required>
+                                    <input type="text" class="form-control" id="Lusername" placeholder="Username"  required style="max-width: 100%;">
                                     <div class="invalid-feedback">
                                         Valid username is required.
                                     </div>
                                     <br />
                                     <label for="Lpassword">Password</label>
-                                    <input type="password" class="form-control" id="Lpassword" placeholder="Password"  required>
+                                    <input type="password" class="form-control" id="Lpassword" placeholder="Password"  style="max-width: 100%;" required>
                                     <div class="invalid-feedback">
                                         Valid password is required.
                                     </div>
@@ -143,25 +143,25 @@
                             <div class="m-5">
                                 <form>
                                     <label for="Susername">Username</label>
-                                    <input type="text" class="form-control" id="Susername" placeholder="Username"  required>
+                                    <input type="text" class="form-control" id="Susername" placeholder="Username"  style="max-width: 100%;" required>
                                     <div class="invalid-feedback">
                                         Valid username is required.
                                     </div>
                                     <br />
                                     <label for="Semail">Email</label>
-                                    <input type="email" class="form-control" id="Semail" placeholder="email@example.com"  required>
+                                    <input type="email" class="form-control" id="Semail" placeholder="email@example.com"  style="max-width: 100%;" required>
                                     <div class="invalid-feedback">
                                         Please enter a valid email address for shipping updates.
                                     </div>
                                     <br />
                                     <label for="Spassword">Password</label><br />
-                                    <input type="password" class="form-control" id="Spassword" placeholder="Password"  required>
+                                    <input type="password" class="form-control" id="Spassword" placeholder="Password"  style="max-width: 100%;" required>
                                     <div class="invalid-feedback">
                                         Valid password is required.
                                     </div>
                                     <br />
                                     <label for="Scpassword">Confirm Password</label>
-                                    <input type="password" class="form-control" id="Scpassword" placeholder="Confirm Password"  required>
+                                    <input type="password" class="form-control" id="Scpassword" placeholder="Confirm Password"  style="max-width: 100%;" required>
                                     <div class="invalid-feedback">
                                         Password entered is not same.
                                     </div>
