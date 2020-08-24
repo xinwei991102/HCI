@@ -117,12 +117,12 @@
                             </div>
                         </div>
 
-                        <div class="mb-3 form-group">
+                        <div class="mb-3 form-group validate-me">
                             <label for="address2">Address Line 2<span class="text-muted">(Optional)</span></label>
                             <input type="text" class="form-control" id="address2" placeholder="Jalan ABC">
                         </div>
 
-                        <div class="mb-3 form-group">
+                        <div class="mb-3 form-group validate-me">
                             <label for="address3">Address Line 3<span class="text-muted">(Optional)</span></label>
                             <input type="text" class="form-control" id="address3" placeholder="Taman Bunga">
                         </div>
@@ -171,7 +171,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="custom-control custom-checkbox form-group">
+                        <div class="custom-control custom-checkbox form-group validate-me">
                             <input type="checkbox" class="custom-control-input" id="save-info">
                             <label class="custom-control-label" for="save-info">Save this information for next time</label>
                         </div>
@@ -179,7 +179,7 @@
 
                         <h3 class="mb-3" style="letter-spacing: 0.1em;">Payment Information</h3>
 
-                        <div class="d-block my-3 form-group">
+                        <div class="d-block my-3 form-group validate-me">
                             <div class="custom-control custom-radio">
                                 <input id="credit" name="paymentMethod" type="radio" class="custom-control-input validate-me" checked required>
                                 <label class="custom-control-label" for="credit">Credit / Debit card</label>
