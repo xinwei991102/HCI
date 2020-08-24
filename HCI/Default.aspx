@@ -23,7 +23,7 @@
         <div class="col-lg-3">
             <!-- side bar -->
             <div class="sidenav bg-light shadow p-4" id="sidenav">
-                <form>
+                <div>
                     <div class="form-group">
                         <label for="sortby">Sort by</label>
                         <select class="form-control no-focus-outline" id="sortby" style="cursor:pointer;">
@@ -91,7 +91,7 @@
                             </label>
                         </div>
                     </div>
-                </form>
+                </div>
             </div>
         </div>
         <div class="col text-center">

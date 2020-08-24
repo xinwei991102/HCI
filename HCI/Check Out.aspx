@@ -60,77 +60,77 @@
                         </li>
                     </ul>
 
-                    <form class="card p-2" style="width: 100%">
+                    <div class="card p-2" style="width: 100%">
                         <div class="input-group">
                             <input type="text" class="form-control" placeholder="Promo code" style="max-width: 100%">
                             <div class="input-group-append">
                                 <button type="submit" class="btn btn-primary no-focus-outline">Redeem</button>
                             </div>
                         </div>
-                    </form>
+                    </div>
                 </div>
             </div>
             <div class="col-md-6 order-md-1">
                 <div class="bg-light shadow p-4">
                     <h3 class="my-3" style="letter-spacing: 0.1em;">Shipping Information</h3>
-                    <form class="needs-validation" novalidate action="Payment Complete.aspx">
+                    <div >
                         <div class="row">
-                            <div class="col-md-6 mb-3">
+                            <div class="col-md-6 mb-3 form-group validate-me">
                                 <label for="firstName">First name</label>
-                                <input type="text" class="form-control" id="firstName" placeholder="John" value="" required>
+                                <input type="text" class="form-control validate-me" id="firstName" placeholder="John" value="" required>
                                 <div class="invalid-feedback">
                                     Valid first name is required.
                                 </div>
                             </div>
-                            <div class="col-md-6 mb-3">
+                            <div class="col-md-6 mb-3 form-group validate-me">
                                 <label for="lastName">Last name</label>
-                                <input type="text" class="form-control" id="lastName" placeholder="Doe" value="" required>
+                                <input type="text" class="form-control validate-me" id="lastName" placeholder="Doe" value="" required>
                                 <div class="invalid-feedback">
                                     Valid last name is required.
                                 </div>
                             </div>
                         </div>
 
-                        <div class="mb-3">
+                        <div class="mb-3 form-group validate-me">
                             <label for="phoneNumber">Phone number</label>
                             <div class="input-group">
-                                <input type="text" class="form-control" id="phoneNumber" placeholder="012-3456789" required>
+                                <input type="text" class="form-control validate-me" id="phoneNumber" placeholder="012-3456789" required>
                                 <div class="invalid-feedback" style="width: 100%;">
                                     Your phone number is required.
                                 </div>
                             </div>
                         </div>
 
-                        <div class="mb-3">
+                        <div class="mb-3 form-group validate-me">
                             <label for="email">Email</label>
-                            <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+                            <input type="email" class="form-control validate-me" id="email" placeholder="you@example.com" required>
                             <div class="invalid-feedback">
                                 Please enter a valid email address for shipping updates.
                             </div>
                         </div>
 
-                        <div class="mb-3">
+                        <div class="mb-3 form-group validate-me">
                             <label for="address">Address Line 1</label>
-                            <input type="text" class="form-control" id="address" placeholder="Lot 123" required>
+                            <input type="text" class="form-control validate-me" id="address" placeholder="Lot 123" required>
                             <div class="invalid-feedback">
                                 Please enter your shipping address.
                             </div>
                         </div>
 
-                        <div class="mb-3">
+                        <div class="mb-3 form-group">
                             <label for="address2">Address Line 2<span class="text-muted">(Optional)</span></label>
                             <input type="text" class="form-control" id="address2" placeholder="Jalan ABC">
                         </div>
 
-                        <div class="mb-3">
+                        <div class="mb-3 form-group">
                             <label for="address3">Address Line 3<span class="text-muted">(Optional)</span></label>
                             <input type="text" class="form-control" id="address3" placeholder="Taman Bunga">
                         </div>
 
                         <div class="row">
-                            <div class="col-md-5 mb-3">
+                            <div class="col-md-5 mb-3 form-group validate-me">
                                 <label for="country">Country</label>
-                                <select class="custom-select d-block w-100" id="country" required>
+                                <select class="custom-select d-block w-100 validate-me" id="country" required>
                                     <option value="">Choose...</option>
                                     <option>Malaysia</option>
                                 </select>
@@ -138,9 +138,9 @@
                                     Please select a valid country.
                                 </div>
                             </div>
-                            <div class="col-md-4 mb-3">
+                            <div class="col-md-4 mb-3 form-group validate-me">
                                 <label for="state">State</label>
-                                <select class="custom-select d-block w-100" id="state" required>
+                                <select class="custom-select d-block w-100 validate-me" id="state" required>
                                     <option value="">Choose...</option>
                                     <option>WP Kuala Lumpur</option>
                                     <option>WP Labuan</option>
@@ -163,15 +163,15 @@
                                     Please provide a valid state.
                                 </div>
                             </div>
-                            <div class="col-md-3 mb-3">
+                            <div class="col-md-3 mb-3 form-group validate-me">
                                 <label for="zip">Postcode</label>
-                                <input type="text" class="form-control" id="zip" placeholder="58000" required>
+                                <input type="text" class="form-control validate-me" id="zip" placeholder="58000" required>
                                 <div class="invalid-feedback">
                                     Zip code required.
                                 </div>
                             </div>
                         </div>
-                        <div class="custom-control custom-checkbox">
+                        <div class="custom-control custom-checkbox form-group">
                             <input type="checkbox" class="custom-control-input" id="save-info">
                             <label class="custom-control-label" for="save-info">Save this information for next time</label>
                         </div>
@@ -179,51 +179,57 @@
 
                         <h3 class="mb-3" style="letter-spacing: 0.1em;">Payment Information</h3>
 
-                        <div class="d-block my-3">
+                        <div class="d-block my-3 form-group">
                             <div class="custom-control custom-radio">
-                                <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required>
+                                <input id="credit" name="paymentMethod" type="radio" class="custom-control-input validate-me" checked required>
                                 <label class="custom-control-label" for="credit">Credit / Debit card</label>
                             </div>
                             <div class="custom-control custom-radio">
-                                <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
+                                <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input validate-me" required>
                                 <label class="custom-control-label" for="paypal">Paypal</label>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-6 mb-3">
+                            <div class="col-md-6 mb-3 form-group validate-me">
                                 <label for="cc-name">Name on card</label>
-                                <input type="text" class="form-control" id="cc-name" placeholder="John Doe" required>
+                                <input type="text" class="form-control validate-me" id="cc-name" placeholder="John Doe" required>
                                 <small class="text-muted">Full name as displayed on card</small>
                                 <div class="invalid-feedback">
                                     Name on card is required
                                 </div>
                             </div>
-                            <div class="col-md-6 mb-3">
+                            <div class="col-md-6 mb-3 form-group validate-me">
                                 <label for="cc-number">Card number</label>
-                                <input type="text" class="form-control" id="cc-number" placeholder="1111 2222 3333 4444" required>
+                                <input type="text" class="form-control validate-me" id="cc-number" placeholder="1111 2222 3333 4444" required>
                                 <div class="invalid-feedback">
                                     Credit card number is required
                                 </div>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-3 mb-3">
+                            <div class="col-md-3 mb-3 form-group validate-me">
                                 <label for="cc-expiration">Expiration</label>
-                                <input type="text" class="form-control" id="cc-expiration" placeholder="12/34" required>
+                                <input type="text" class="form-control validate-me" id="cc-expiration" placeholder="12/34" required>
                                 <div class="invalid-feedback">
                                     Expiration date required
                                 </div>
                             </div>
-                            <div class="col-md-3 mb-3">
+                            <div class="col-md-3 mb-3 form-group validate-me">
                                 <label for="cc-expiration">CVV</label>
-                                <input type="text" class="form-control" id="cc-cvv" placeholder="123" required>
+                                <input type="text" class="form-control validate-me" id="cc-cvv" placeholder="123" required>
                                 <div class="invalid-feedback">
                                     Security code required
                                 </div>
                             </div>
                         </div>
-                        <button class="btn btn-primary btn-lg btn-block no-focus-outline" type="submit">Continue to payment</button>
-                    </form>
+                        <div class="row">
+                            <div class="col">
+                                <asp:Button runat="server" ID="btnSubmit" Text="Continue to Payment" class="btn btn-primary btn-lg btn-block no-focus-outline" Style="max-width:100%;" PostBackUrl="~/Payment Complete.aspx"/>
+                                <%--<button class="btn btn-primary btn-lg btn-block no-focus-outline" type="submit">Continue to payment</button>--%>
+                            </div>
+                        </div>
+                        
+                    </div>
                 </div>
             </div>
         </div>
